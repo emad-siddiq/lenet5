@@ -11,12 +11,12 @@ def get_mnist_data(batch_size=32, train_val_split=0.9):
     ])
     
     # Download MNIST dataset
-    train_dataset = datasets.MNIST(root='./data', 
+    train_dataset = datasets.MNIST(root='.', 
                                  train=True,
                                  transform=transform,
                                  download=True)
     
-    test_dataset = datasets.MNIST(root='./data', 
+    test_dataset = datasets.MNIST(root='.', 
                                 train=False,
                                 transform=transform,
                                 download=True)

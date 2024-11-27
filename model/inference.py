@@ -3,7 +3,7 @@ import torch.nn.functional as F
 from PIL import Image
 import numpy as np
 from torchvision import transforms
-from model import LeNet5
+from model.model import LeNet5
 import os
 from typing import Union, List, Tuple
 

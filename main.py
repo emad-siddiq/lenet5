@@ -1,7 +1,7 @@
 import os
 import argparse
-from train import train
-from inference import LeNet5Inferencer
+from model.train import train
+from model.inference import LeNet5Inferencer
 from flask import Flask, request, jsonify
 import logging
 

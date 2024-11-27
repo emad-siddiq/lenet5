@@ -1,7 +1,7 @@
 import torch
-from model import LeNet5
-from dataset import get_mnist_data
-from loss import TrainingConfig
+from model.model import LeNet5
+from data.dataset import get_mnist_data
+from model.loss import TrainingConfig
 
 def train_epoch(model, train_loader, config, device):
     model.train()
@@ -71,6 +71,6 @@ def train():
         print('-' * 50)
 
     # Save the trained model weights
-    torch.save(model.state_dict(), './weights/lenet5.pth')
+    torch.save(model.state_dict(), './../weights/lenet5.pth')
 
 
