@@ -1,0 +1,14 @@
+name: lenet5
+channels:
+  - conda-forge
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch
+  - torch
+  - torchvision
+  - numpy
+  - pillow
+  - Flask
+  - pip
